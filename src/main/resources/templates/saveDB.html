@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<!--[[${msg}]]-->
+<p> вивід з бази даних</p>
+<div>
+    <form th:action="@{/output}" method="get">
+        <input type ="submit" name="" placeholder="">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<!--[[${msg}]]-->
+<p> вивід даних</p>
+<div>
+
+    <form th:action="@{/output}" method="post">
+        <input type ="submit" name="" placeholder="">
+    </form>
+</div>
+
+<div>
+    <ol>
+       <li th:each="tov:${tovars}">
+            <p> ${tov.name}+' '+${tov.price}</p>
+            <p> ${tov.about}</p>
+        </li>
+    </ol>
+</div>
+</body>
+</html>
